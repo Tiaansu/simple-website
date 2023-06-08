@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Programming languages, Operating systems, Tools, Framework and Libraries, and Runtime environments</title>
-	<link rel="icon" type="image/png" href="./dm_logo_light.png">
+	<link rel="icon" type="image/png" href="./dm_logo_dark.png">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
@@ -385,24 +385,7 @@
         <p>Copyright &copy;{{YEAR}}; Designed by <span>Marlon R. Cabading</span></p>
     </footer>
 
-    <script>
-		const favicon = document.querySelector('link[rel="icon"]');
-		const lightModeFavicon = './dm_logo_light.png';
-		const darkModeFavicon = 'dm_logo_dark.png';
-		
-		function updateFavicon(isDarkMode) {
-		  if (isDarkMode) {
-			favicon.href = darkModeFavicon;
-		  } else {
-			favicon.href = lightModeFavicon;
-		  }
-		}
-		const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-		updateFavicon(prefersDarkMode);
-		window.matchMedia('(prefers-color-scheme: dark)').addListener((e) => {
-		  updateFavicon(e.matches);
-		});
-		
+    <script>		
 		const links = document.querySelectorAll('.navbar .nav-menu .nav-item .nav-link');
 
         links.forEach((link) => {
