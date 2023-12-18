@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 #programming-languages,
@@ -171,11 +171,14 @@ footer p {
     text-align: center;
 }
 
-footer p span {
+footer p a {
     transition: 0.3s ease-in;
+    cursor: pointer;
+    text-decoration: none;
+    color: #f1f1f1;
 }
 
-footer p span:hover {
+footer p a:hover {
     color: #1e90ff;
 }
 
